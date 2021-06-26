@@ -5,23 +5,37 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Guess My Number Game</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap"
+      rel="stylesheet"
+    />
     <link href="style.css" rel="stylesheet" />
   </head>
   <body>
-    <form class="header">
-      <input type="button" value="Again!" class="header-button" />
-      <span class="text">&lsaquo;Between 1 and 20&rsaquo;</span>
-    </form>
-    <h1 class="title">Guess My Number!</h1>
-    <form class="body">
-      <input type="number" class="digit-box" />
-      <input type="button" value="Check!" class="button-body" />
-    </form>
-    <form class="body">
-      <span>Too high!</span>
-      <span>Score: </span>
-      <span>Highscore: </span>
-    </form>
+    <nave>
+      <form>
+        <button class="button" id="head-button">Again!</button>
+        <p class="number-range">&lsaquo;Between 1 and 20&rsaquo;</p>
+      </form>
+    </nave>
+    <header>
+      <h1 class="title">Guess My Number!</h1>
+      <div id="result-style">
+        <p id="main-result">?</p>
+        <span id="line"></span>
+      </div>
+    </header>
+    <main>
+      <form id="number-check">
+        <input type="number" id="digit-box" />
+        <button class="button" id="check-button">Check!</button>
+      </form>
+      <form id="marks">
+        <span id="hint">Too high!</span>
+        <span id="score">Score: </span>
+        <span id="highscore">Highscore: </span>
+      </form>
+    </main>
     <script src="guess_my_name.js"></script>
   </body>
 </html>

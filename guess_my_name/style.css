@@ -2,19 +2,16 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Press Start 2P";
+  color: white;
 }
 
 body {
   background-color: rgba(5, 5, 5, 0.89);
-  font-family: Georgia, "Times New Roman", Times, serif;
 }
 
-.body,
-.text {
-  color: white;
-}
-
-.header span {
+.number-range {
+  display: inline;
   margin-top: 20px;
   margin-right: 20px;
   position: absolute;
@@ -22,7 +19,7 @@ body {
   right: 0;
 }
 
-.header input {
+.button {
   margin: 10px;
   color: black;
   background-color: white;
@@ -38,26 +35,68 @@ body {
   text-shadow: 2px 2px 2px gray;
 }
 
-.digit-box {
-  width: 100px;
-  height: 50px;
+#result-style {
+  padding: 50px 0 50px 0;
+  margin: 70px 0 70px 0;
+  position: relative;
+}
+
+#main-result {
+  display: inline-block;
+  margin: 10px;
+  padding: 40px;
+  border-width: 10px;
+  border-color: white;
+  border-style: solid;
+  font-size: 40px;
+  position: absolute;
+  top: -25%;
+  right: 15em;
+  background-color: #332f2fd3;
+}
+
+#line {
+  border-style: solid;
+  border-color: white;
+  margin: 0;
+}
+
+#digit-box {
+  width: 120px;
+  height: 80px;
+  font-size: 35px;
+  text-align: right;
   background-color: transparent;
-  border-width: 5px;
+  border-width: 10px;
   border-color: whitesmoke;
   display: block;
-  margin: 20px;
+  margin: 10px;
+  color: white;
 }
 
-.button-body {
-  width: 80px;
-  height: 40px;
-  border-width: 4px;
-  margin: 20px;
-  margin-left: 30px;
-  margin-top: 0;
+#number-check {
+  display: inline-block;
+  position: absolute;
+  left: 30%;
 }
 
-.body span {
-  margin: 20px;
+#marks {
+  display: inline-block;
+  position: absolute;
+  right: 30%;
+}
+
+span {
+  margin: 20px 0px 40px 0px;
   display: block;
+}
+
+main {
+  position: relative;
+}
+
+#check-button {
+  position: absolute;
+  left: 10px;
+  margin-top: 30px;
 }
