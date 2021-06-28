@@ -13,28 +13,29 @@
   </head>
   <body>
     <nave>
-      <form>
-        <button class="button" id="head-button">Again!</button>
-        <p class="number-range">&lsaquo;Between 1 and 20&rsaquo;</p>
-      </form>
+      <div>
+        <button class="button" id="again">Again!</button>
+        <p id="number-range"></p>
+      </div>
     </nave>
     <header>
       <h1 class="title">Guess My Number!</h1>
       <div id="result-style">
         <p id="main-result">?</p>
-        <span id="line"></span>
+        <p id="line"></p>
       </div>
     </header>
     <main>
-      <form id="number-check">
+      <div id="number-check">
         <input type="number" id="digit-box" />
         <button class="button" id="check-button">Check!</button>
-      </form>
-      <form id="marks">
-        <span id="hint">Too high!</span>
-        <span id="score">Score: </span>
-        <span id="highscore">Highscore: </span>
-      </form>
+      </div>
+      <div id="marks">
+        <p id="hint">Hint!</p>
+        <p id="score">Score: 0</p>
+        <p id="lives"></p>
+        <p id="lowscore">Lowscore: 0</p>
+      </div>
     </main>
     <script src="guess_my_name.js"></script>
   </body>
