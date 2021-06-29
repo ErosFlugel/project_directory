@@ -42,7 +42,7 @@ function writeHint() {
     mainresultbox.innerHTML = hiddenresult;
     hintP.innerHTML = "Congratullations you discovered it!";
     document.querySelector("body").style.backgroundColor = "green";
-    mainresultbox.style.width = "280px";
+    mainresultbox.style.padding = "4% 8%";
     gameOver = true;
     writeLowscore();
   } else if (requestnumber > hiddenresult) {
@@ -73,7 +73,7 @@ function reset() {
   hiddenresult = aleatory(minNumber, maxNumber);
   mainresultbox.innerHTML = "?";
   document.querySelector("body").style.backgroundColor = "rgba(5, 5, 5, 0.89)";
-  mainresultbox.style.width = "140px";
+  mainresultbox.style.padding = "4%";
 }
 
 function writeLowscore() {

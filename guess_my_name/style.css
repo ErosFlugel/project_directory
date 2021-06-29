@@ -1,6 +1,4 @@
 * {
-  margin: 0;
-  padding: 0;
   box-sizing: border-box;
   font-family: "Press Start 2P";
   color: white;
@@ -36,32 +34,31 @@ body {
 }
 
 #result-style {
-  padding: 50px 0 50px 0;
   margin: 70px 0 70px 0;
+  padding: 50px 0 50px 0;
   position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 #main-result {
-  display: inline-block;
-  margin: 10px;
-  padding: 40px 10px 10px 10px;
-  width: 140px;
-  height: 140px;
+  position: absolute;
+  padding: 4%;
   text-align: center;
   border-width: 10px;
   border-color: white;
   border-style: solid;
   font-size: 40px;
-  position: absolute;
-  top: -25%;
-  right: 15em;
   background-color: #332f2fd3;
+  z-index: 1000;
 }
 
 #line {
   border-style: solid;
-  border-color: white;
-  margin: 0;
+  border-color: blue;
+  z-index: 500;
+  width: 100%;
 }
 
 #digit-box {
@@ -73,34 +70,30 @@ body {
   border-width: 10px;
   border-color: whitesmoke;
   display: block;
-  margin: 10px;
+  margin: auto;
   color: white;
 }
 
+#check-button {
+  margin: 20% auto 0 auto;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+}
+
 #number-check {
-  display: inline-block;
-  position: absolute;
-  left: 30%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
 }
 
 #marks {
-  display: inline-block;
-  position: absolute;
-  left: 60%;
-  width: 30%;
+  margin: auto;
 }
 
 #marks p {
   margin: 20px 0px 40px 0px;
   text-align: left;
-}
-
-main {
-  position: relative;
-}
-
-#check-button {
-  position: absolute;
-  left: 10px;
-  margin-top: 30px;
 }
