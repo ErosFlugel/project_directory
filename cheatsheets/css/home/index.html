@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="style.css" rel="stylesheet" />
+    <title>CSS cheatsheet</title>
+  </head>
+  <body>
+    <nav class="navbar">
+      <a href="#">
+        <img
+          class="logo"
+          src="../images/mushroom.png"
+          alt="mushi cheatsheet logo"
+        />
+      </a>
+      <button class="btn-icon">
+        <img
+          class="menu-icon-img"
+          src="../images/menu-icon.png"
+          alt="clickable icon menu"
+        />
+      </button>
+      <span id="where-im">css</span>
+      <div class="menu-content hidden">
+        <div class="idk"></div>
+        <ul class="list-flexbox">
+          <li><a id="my-account">My Account</a></li>
+          <li><a id="log-in">Log In</a></li>
+        </ul>
+      </div>
+    </nav>
+    <header>
+      <h1>CSS Cheat-Sheet</h1>
+    </header>
+    <main>
+      <section class="Parts-of-css">
+        <h2>Elements in css declaration structures</h2>
+        <div>
+          <ul>
+            <li>
+              <h3>
+                <label>
+                  Selector
+                  <button class="btn selector-css info-btn">></button>
+                </label>
+              </h3>
+            </li>
+            <p class="description-text">
+              The selector can be a class that can contain more than one element
+              of the html
+            </p>
+            <h4>Types</h4>
+            <div>
+              <ul id="types-ul">
+                <li id="selector-flex-column-1" class="flexbox">
+                  <div id="selector-types-column-1" class="attribute">
+                    Universal
+                  </div>
+                  <div id="column-1" class="value">*</div>
+                </li>
+                <li id="selector-flex-column-2" class="flexbox">
+                  <div id="selector-types-column-2" class="attribute">
+                    Tag Element
+                  </div>
+                  <div class="value">h1 / p / label / div</div>
+                </li>
+                <li id="selector-flex-column-3" class="flexbox">
+                  <div id="selector-types-column-3" class="attribute">
+                    Classes
+                  </div>
+                  <div class="value">.class-name-example</div>
+                </li>
+                <li id="selector-flex-column-4" class="flexbox">
+                  <div id="selector-types-column-4" class="attribute">ID</div>
+                  <div class="value">#name-id-example</div>
+                </li>
+                <li id="selector-flex-column-5" class="flexbox">
+                  <div id="selector-types-column-5" class="attribute">
+                    Per Attribute
+                  </div>
+                  <div class="value">[name='samuel']</div>
+                </li>
+                <li id="selector-flex-column-6" class="flexbox">
+                  <div id="selector-types-column-6" class="attribute">
+                    Descendense
+                  </div>
+                  <div class="value">
+                    h1 p / <span>#johnwik label</span> /
+                    <span>.mymomy .shoes</span>
+                  </div>
+                </li>
+                <li id="selector-flex-column-7" class="flexbox">
+                  <div id="selector-types-column-7" class="attribute">
+                    Pseudo-Classes
+                  </div>
+                  <div class="value">xNameOfXClass:hover</div>
+                </li>
+              </ul>
+            </div>
+            <li>
+              <h3>
+                <a href="#">Attributes</a>
+              </h3>
+            </li>
+            <p class="description-text">
+              The attributes are a list of characteristics that css allows us to
+              modify
+            </p>
+            <li>
+              <h3>Value</h3>
+            </li>
+            <p calss="description-text">
+              Here goes the specific characteristic that contains the attribute
+            </p>
+          </ul>
+          <img
+            class="img hidden"
+            src="../images/css-sections-declaration.PNG"
+            alt="css-sections-declarations"
+          />
+        </div>
+      </section>
+      <section>
+        <h2>Priority Hierarchy</h2>
+        <ol>
+          <li>!important</li>
+          <li>line-style</li>
+          <li>identifiyer</li>
+          <li>classes, pseudo-classes, attributes</li>
+          <li>Elements Pseudo-Elements</li>
+        </ol>
+      </section>
+      <section>
+        <h2>Standard Name Language for class & id</h2>
+        <ul>
+          <li>
+            <h3>
+              <label>
+                BEM
+                <button class="info-btn">></button>
+              </label>
+            </h3>
+          </li>
+        </ul>
+      </section>
+      <section class="properties"></section>
+    </main>
+    <script src="cheatsheet.js"></script>
+  </body>
+</html>

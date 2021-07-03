@@ -1,11 +1,19 @@
 * {
-  margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
 body {
-  background-color: rgba(248, 206, 90, 0.534);
+  background: linear-gradient(to top, #ccffff, #ffcccc);
+}
+
+header,
+main {
+  margin: 0 0 0 3em;
+}
+
+ul {
+  list-style: none;
 }
 
 .navbar {
@@ -86,7 +94,7 @@ body {
   display: none;
 }
 
-.selector-css {
+.info-btn {
   background-color: transparent;
   border-style: inherit;
   font-size: inherit;
@@ -94,7 +102,27 @@ body {
   font-weight: bold;
 }
 
-.selector-css:hover {
+.info-btn:hover {
   color: rgb(182, 182, 182);
   /* text-shadow: 1px 2px 5px gray;*/
+}
+
+.selector-type-flexbox {
+  display: flex;
+  flex-direction: column;
+}
+
+.flexbox {
+  display: flex;
+  flex: 1;
+  text-align: center;
+  border: solid;
+  margin-bottom: 0.1em;
+}
+.attribute {
+  flex: 1;
+  border-right: solid;
+}
+.value {
+  flex: 1;
 }
