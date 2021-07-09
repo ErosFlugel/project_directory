@@ -1,5 +1,5 @@
 const menuIcon = document.querySelector(".btn-icon");
-const menuList = document.querySelector(".menu-content");
+const menuList = document.querySelector(".menu-content-container");
 menuIcon.addEventListener("click", openCloseMenu);
 
 function openCloseMenu() {

@@ -1,4 +1,5 @@
 "use strict";
+
 const again = document.getElementById("again");
 const checkbutton = document.querySelector("#check-button");
 const requestnumberbox = document.getElementById("digit-box");

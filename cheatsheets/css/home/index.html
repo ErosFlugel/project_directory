@@ -9,113 +9,132 @@
   </head>
   <body>
     <nav class="navbar">
-      <a href="#">
-        <img
-          class="logo"
-          src="../images/mushroom.png"
-          alt="mushi cheatsheet logo"
-        />
-      </a>
-      <button class="btn-icon">
-        <img
-          class="menu-icon-img"
-          src="../images/menu-icon.png"
-          alt="clickable icon menu"
-        />
-      </button>
-      <span id="where-im">css</span>
-      <div class="menu-content hidden">
+      <div class="logo-container">
+        <a href="#">
+          <img
+            class="logo-img"
+            src="../images/mushroom.png"
+            alt="mushi cheatsheet logo"
+          />
+        </a>
+      </div>
+      <div class="menu-icon-container">
+        <button class="btn-icon">
+          <img
+            class="menu-icon-img"
+            src="../images/menu-icon.png"
+            alt="clickable icon menu"
+          />
+        </button>
+      </div>
+      <div class="web-reference-container">
+        <span id="where-im">css</span>
+      </div>
+      <div class="menu-content-container hidden">
         <div class="idk"></div>
-        <ul class="list-flexbox">
-          <li><a id="my-account">My Account</a></li>
-          <li><a id="log-in">Log In</a></li>
-        </ul>
+        <div class="list-flex-container">
+          <ul class="list-flex">
+            <li><a href="#" id="my-account">My Account</a></li>
+            <li><a href="#" id="log-in">Log In</a></li>
+            <li>
+              <a href="#" id="settings">Settings</a>
+            </li>
+          </ul>
+        </div>
       </div>
     </nav>
-    <header>
-      <h1>CSS Cheat-Sheet</h1>
+    <header class="header">
+      <div class="main-title-container">
+        <h1>CSS Cheat-Sheet</h1>
+      </div>
     </header>
     <main>
-      <section class="Parts-of-css">
-        <h2>Elements in css declaration structures</h2>
+      <section class="parts-css">
+        <div class="main-title-container">
+          <h2>Elements in css declaration structures</h2>
+        </div>
+        <div class="selector-title-container">
+          <h3>
+            <label>
+              Selector
+              <button class="btn selector-css info-btn">></button>
+            </label>
+          </h3>
+        </div>
+        <div class="selector-description-container">
+          <p class="description-text">
+            The selector can be a class that can contain more than one element
+            of the html
+          </p>
+        </div>
         <div>
-          <ul>
-            <li>
-              <h3>
-                <label>
-                  Selector
-                  <button class="btn selector-css info-btn">></button>
-                </label>
-              </h3>
+          <h4>Types</h4>
+        </div>
+        <div>
+          <ul id="types-ul">
+            <li id="selector-flex-column-1" class="flexbox">
+              <div id="selector-types-column-1" class="attribute">
+                Universal
+              </div>
+              <div id="column-1" class="value">*</div>
             </li>
-            <p class="description-text">
-              The selector can be a class that can contain more than one element
-              of the html
-            </p>
-            <h4>Types</h4>
-            <div>
-              <ul id="types-ul">
-                <li id="selector-flex-column-1" class="flexbox">
-                  <div id="selector-types-column-1" class="attribute">
-                    Universal
-                  </div>
-                  <div id="column-1" class="value">*</div>
-                </li>
-                <li id="selector-flex-column-2" class="flexbox">
-                  <div id="selector-types-column-2" class="attribute">
-                    Tag Element
-                  </div>
-                  <div class="value">h1 / p / label / div</div>
-                </li>
-                <li id="selector-flex-column-3" class="flexbox">
-                  <div id="selector-types-column-3" class="attribute">
-                    Classes
-                  </div>
-                  <div class="value">.class-name-example</div>
-                </li>
-                <li id="selector-flex-column-4" class="flexbox">
-                  <div id="selector-types-column-4" class="attribute">ID</div>
-                  <div class="value">#name-id-example</div>
-                </li>
-                <li id="selector-flex-column-5" class="flexbox">
-                  <div id="selector-types-column-5" class="attribute">
-                    Per Attribute
-                  </div>
-                  <div class="value">[name='samuel']</div>
-                </li>
-                <li id="selector-flex-column-6" class="flexbox">
-                  <div id="selector-types-column-6" class="attribute">
-                    Descendense
-                  </div>
-                  <div class="value">
-                    h1 p / <span>#johnwik label</span> /
-                    <span>.mymomy .shoes</span>
-                  </div>
-                </li>
-                <li id="selector-flex-column-7" class="flexbox">
-                  <div id="selector-types-column-7" class="attribute">
-                    Pseudo-Classes
-                  </div>
-                  <div class="value">xNameOfXClass:hover</div>
-                </li>
-              </ul>
-            </div>
-            <li>
-              <h3>
-                <a href="#">Attributes</a>
-              </h3>
+            <li id="selector-flex-column-2" class="flexbox">
+              <div id="selector-types-column-2" class="attribute">
+                Tag Element
+              </div>
+              <div class="value">h1 / p / label / div</div>
             </li>
-            <p class="description-text">
-              The attributes are a list of characteristics that css allows us to
-              modify
-            </p>
-            <li>
-              <h3>Value</h3>
+            <li id="selector-flex-column-3" class="flexbox">
+              <div id="selector-types-column-3" class="attribute">Classes</div>
+              <div class="value">.class-name-example</div>
             </li>
-            <p calss="description-text">
-              Here goes the specific characteristic that contains the attribute
-            </p>
+            <li id="selector-flex-column-4" class="flexbox">
+              <div id="selector-types-column-4" class="attribute">ID</div>
+              <div class="value">#name-id-example</div>
+            </li>
+            <li id="selector-flex-column-5" class="flexbox">
+              <div id="selector-types-column-5" class="attribute">
+                Per Attribute
+              </div>
+              <div class="value">[name='samuel']</div>
+            </li>
+            <li id="selector-flex-column-6" class="flexbox">
+              <div id="selector-types-column-6" class="attribute">
+                Descendense
+              </div>
+              <div class="value">
+                h1 p / <span>#johnwik label</span> /
+                <span>.mymomy .shoes</span>
+              </div>
+            </li>
+            <li id="selector-flex-column-7" class="flexbox">
+              <div id="selector-types-column-7" class="attribute">
+                Pseudo-Classes
+              </div>
+              <div class="value">xNameOfXClass:hover</div>
+            </li>
           </ul>
+        </div>
+        <div>
+          <h3>
+            <a href="#">Attributes</a>
+          </h3>
+        </div>
+        <div>
+          <p class="description-text">
+            The attributes are a list of characteristics that css allows us to
+            modify
+          </p>
+        </div>
+        <div>
+          <h3>Value</h3>
+        </div>
+        <div>
+          <p calss="description-text">
+            Here goes the specific characteristic that contains the attribute
+          </p>
+        </div>
+        <div>
           <img
             class="img hidden"
             src="../images/css-sections-declaration.PNG"
@@ -124,27 +143,35 @@
         </div>
       </section>
       <section>
-        <h2>Priority Hierarchy</h2>
-        <ol>
-          <li>!important</li>
-          <li>line-style</li>
-          <li>identifiyer</li>
-          <li>classes, pseudo-classes, attributes</li>
-          <li>Elements Pseudo-Elements</li>
-        </ol>
+        <div>
+          <h2>Priority Hierarchy</h2>
+        </div>
+        <div>
+          <ol>
+            <li>!important</li>
+            <li>line-style</li>
+            <li>identifiyer</li>
+            <li>classes, pseudo-classes, attributes</li>
+            <li>Elements Pseudo-Elements</li>
+          </ol>
+        </div>
       </section>
       <section>
-        <h2>Standard Name Language for class & id</h2>
-        <ul>
-          <li>
-            <h3>
-              <label>
-                BEM
-                <button class="info-btn">></button>
-              </label>
-            </h3>
-          </li>
-        </ul>
+        <div>
+          <h2>Standard Name Language for class & id</h2>
+        </div>
+        <div>
+          <ul>
+            <li>
+              <h3>
+                <label>
+                  BEM
+                  <button class="info-btn">></button>
+                </label>
+              </h3>
+            </li>
+          </ul>
+        </div>
       </section>
       <section class="properties"></section>
     </main>

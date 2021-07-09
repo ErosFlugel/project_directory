@@ -3,10 +3,6 @@
   box-sizing: border-box;
 }
 
-body {
-  background: linear-gradient(to top, #ccffff, #ffcccc);
-}
-
 header,
 main {
   margin: 0 0 0 3em;
@@ -15,6 +11,8 @@ main {
 ul {
   list-style: none;
 }
+
+/* navbar  */
 
 .navbar {
   position: relative;
@@ -25,11 +23,15 @@ ul {
   align-items: center;
 }
 
-.logo {
+/* logo  */
+
+.logo-img {
   position: absolute;
   width: 5em;
   margin: 0.125rem;
 }
+
+/* place  */
 
 #where-im {
   font-size: 3em;
@@ -44,12 +46,15 @@ ul {
   border-radius: 20%;
 }
 
-.btn-icon {
+/* menu-icon  */
+
+.navbar .btn-icon {
   position: fixed;
   right: 0;
   margin: 0.4em 0.4em 0 0;
   border-radius: 50%;
   z-index: 1000;
+  transition: right 500ms cubic-bezier(0.3, 1.2, 0.3, 1);
 }
 
 .menu-icon-img {
@@ -57,13 +62,14 @@ ul {
   border-radius: 50%;
 }
 
-.menu-content {
+/* menu-content  */
+.menu-content-container {
   display: flex;
   position: fixed;
   align-items: center;
   flex-direction: column;
   right: 0;
-  background-color: gray;
+  background-color: rgb(128, 128, 128, 0.6);
   width: 20em;
   height: 20em;
   margin: 0.5em;
@@ -76,23 +82,57 @@ ul {
   order: 1;
 }
 
-.list-flexbox {
+.menu-content-container .list-flex-container {
   display: flex;
   flex-direction: column;
   align-items: center;
+  width: 100%;
   flex: 2;
   order: 2;
 }
 
-.menu-content .list-flexbox li {
-  list-style-type: none;
-  border-style: solid;
-  background-color: white;
+.menu-content-container .list-flex-container .list-flex {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
 }
+
+.list-flex-container .list-flex li {
+  flex: 1;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+}
+
+.list-flex-container .list-flex li a {
+  text-decoration: none;
+  position: relative;
+  flex: 1;
+  color: gray;
+  border: 10px solid black;
+  /* margin-bottom: 0.3em; */
+  border-radius: 2em;
+  background-color: black;
+  transition: transform 250ms;
+}
+
+.list-flex-container .list-flex li {
+  position: relative;
+  flex: 1;
+}
+
+.list-flex-container .list-flex li:hover {
+  transform: scale(1.25);
+  opacity: 0.8;
+}
+
+/* hidden class */
 
 .hidden {
   display: none;
 }
+
+/* display buttons  */
 
 .info-btn {
   background-color: transparent;
@@ -107,6 +147,7 @@ ul {
   /* text-shadow: 1px 2px 5px gray;*/
 }
 
+/* sections  */
 .selector-type-flexbox {
   display: flex;
   flex-direction: column;
